@@ -1,0 +1,15 @@
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\bin\Debug\Ap_Project.exe.config
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\bin\Debug\Ap_Project.exe
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\bin\Debug\Ap_Project.pdb
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project.csprojAssemblyReference.cache
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\MainWindow.g.cs
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\App.g.cs
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project_MarkupCompile.cache
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project_MarkupCompile.lref
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\MainWindow.baml
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project.g.resources
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project.Properties.Resources.resources
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project.csproj.GenerateResource.cache
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project.exe
+C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\obj\Debug\Ap_Project.pdb
