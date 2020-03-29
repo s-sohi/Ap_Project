@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ap_Project"
         mc:Ignorable="d"
-        Title="MainWindow" Height="700" Width="500">
+        Title="Ui_Project" Height="600" Width="480">
     <!--Custom Style-->
     <Window.Resources>
         <Style TargetType="TabControl">
@@ -17,21 +17,40 @@
         </Style>
         <Style TargetType="CheckBox">
             <Setter Property="Margin" Value="10,5,0,5"/>
-            <Setter Property="FontWeight" Value="Regular"/>
-            
+            <Setter Property="FontWeight" Value="Normal"/>
+
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="0"/>
+
+
+        </Style>
+        <Style TargetType="TextBox">
+
+            <Setter Property="FontFamily" Value="Roboto Condensed"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="BorderBrush" Value="#666"/>
+            <Setter Property="BorderThickness" Value="2"/>
         </Style>
     </Window.Resources>
     <Border Background="#ddd">
         <StackPanel>
-            <TabControl Height="667.96">
+            <TabControl Height="570">
 
 
-                <TabItem Width="80" Margin="-2,0,2,0" >
+
+                <TabItem Width="80" Margin="-2,0,2,0"  >
                     <!--First tab-->
                     <TabItem.Header>
-                        <TextBlock Text="First"  Margin="0,0,0,5"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\tab.png" Width="10" Margin="0,0,5,0"/>
+                            <TextBlock Text="First"  Margin="0,5,0,0" Height="20"/>
+
+
+                        </StackPanel>
                     </TabItem.Header>
-                    <StackPanel Height="600" Margin="5,0,5,0">
+                    <StackPanel Margin="5,0,5,0">
                         <!--First tab Frame-->
 
                         <!--First TextBox-->
@@ -44,7 +63,7 @@
                                 <ColumnDefinition  Width="*"/>
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="1">
-                                <TextBlock Text="Adding, Loading, Reset, And other stuff"/>
+                                <TextBlock Text="Adding, Loading, Reset, And other stuff" TextAlignment="Center"/>
                             </StackPanel>
                         </Grid>
 
@@ -61,20 +80,23 @@
                                 <ColumnDefinition  Width="*"/>
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0"  Margin="10">
-                                <Button Content="Save" Height="30"/>
+                                <Button Content="Save" Height="30" Background="#eee"/>
 
                             </StackPanel>
                             <StackPanel Grid.Column="1" Margin="10" >
 
-                                <Button Content="Load"  Height="30"/>
+                                <Button Content="Load"  Height="30"  Background="#eee"/>
 
                             </StackPanel>
                             <StackPanel Grid.Column="4" Margin="10" >
-                                <Button Content="Reset"  Height="30"/>
+                                <Button   Height="30" Background="#eee">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Reset"  Margin="0,5,7,0" Height="20" Foreground="#000"/>
+                                        <Image Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\Reset.png" Width="16" Margin="0,0,3,0"/>
+                                    </StackPanel>
+                                </Button>
 
                             </StackPanel>
-
-
                         </Grid>
                         <Grid>
                             <Grid.RowDefinitions>
@@ -88,12 +110,49 @@
 
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0" Margin="10,5">
-                                <Button Content="New"  Height="30"/>
+                                <Button Content="New"  Height="30"  Background="#eee"/>
                             </StackPanel>
                         </Grid>
+
+
+
+                        <!--Text-->
                         <StackPanel Margin="0,10,0,0">
                             <TextBlock Text="Some CheckBoxes" Padding="0,5"/>
                         </StackPanel>
+
+
+                        <!-- -->
+                        <Grid Margin="0,0,0,20">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition  Width="*"/>
+                                <ColumnDefinition  Width="*"/>
+                                <ColumnDefinition  Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="0">
+                                <CheckBox Content="Css"/>
+                                <CheckBox Content="Html"/>
+                                <CheckBox Content="JavaScript"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1">
+                                <CheckBox Content="Asp"/>
+                                <CheckBox Content="Php"/>
+                                <CheckBox Content="Python"/>
+                            </StackPanel>
+                            <StackPanel Grid.Column="2">
+                                <ComboBox SelectedIndex="0">
+                                    <ComboBoxItem Content="Linux"/>
+                                    <ComboBoxItem Content="Windows"/>
+                                </ComboBox>
+                            </StackPanel>
+                        </Grid>
+                        <TextBlock Text="Other things"/>
+                        <TextBox VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Margin="5" Height="150">
+
+                        </TextBox>
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition Height="Auto"/>
@@ -101,16 +160,16 @@
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition  Width="*"/>
                                 <ColumnDefinition  Width="*"/>
+                                <ColumnDefinition  Width="*"/>
+
                             </Grid.ColumnDefinitions>
-                            <StackPanel Grid.Column="0">
-                                <CheckBox>Css</CheckBox>
-                                <CheckBox>Html</CheckBox>
-                                <CheckBox>JavaScript</CheckBox>
-                            </StackPanel>
                             <StackPanel Grid.Column="1">
-                                <CheckBox>Asp</CheckBox>
-                                <CheckBox>Php</CheckBox>
-                                <CheckBox>Python</CheckBox>
+                                <Button Margin="0,15,0,0" Padding="8"  Background="#eee">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="Next Page"  Margin="0,7,8,0" Height="20" Foreground="#000 " FontWeight="Bold"/>
+                                        <Image Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\Next.png" Width="30" Margin="0,0,3,0"/>
+                                    </StackPanel>
+                                </Button>
                             </StackPanel>
                         </Grid>
                     </StackPanel>
@@ -120,14 +179,99 @@
 
 
 
+
                 <TabItem Width="80" Margin="-3,0,3,0">
                     <TabItem.Header>
-                        <TextBlock Text="First" Height="24.96"/>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\tab.png" Width="10" Margin="0,0,5,0"/>
+                            <TextBlock Text="Second"  Margin="0,5,0,0" Height="20"/>
+
+
+                        </StackPanel>
                     </TabItem.Header>
+                    <StackPanel Margin="5,0,5,0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+
+                            </Grid.ColumnDefinitions>
+                            <StackPanel Grid.Column="1">
+                                <TextBlock Text="Name, Family, Age and Equations" TextAlignment="Center"/>
+                            </StackPanel>
+                        </Grid>
+                        <StackPanel Margin="0,10">
+                            <Grid Margin="0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Grid.Row="0" Grid.Column="0">
+                                    <TextBlock Text="Signup Form" TextAlignment="Center" FontWeight="Bold" FontSize="20" FontFamily="Cobrol"/>
+                                </StackPanel>
+
+
+
+                            </Grid>
+                            <Grid Margin="0,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+
+
+
+                                </Grid.ColumnDefinitions>
+
+                                <StackPanel Margin="20,0" Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
+                                    <TextBlock Text="Name :" TextAlignment="Center" FontSize="15"/>
+                                    <TextBox Height="25" Padding="2" Width="190" Margin="10,6.5,0,1.5" Background=" #eee" />
+                                </StackPanel>
+
+                            </Grid>
+                            <Grid Margin="0,0">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="*"/>
+
+
+
+                                </Grid.ColumnDefinitions>
+                                <StackPanel Margin="17,0" Orientation="Horizontal" Grid.Row="1" Grid.Column="0">
+                                    <TextBlock Text="Family :" TextAlignment="Center" FontSize="15"/>
+                                    <TextBox Height="25" Padding="2" Width="190" Margin="10,6.5,0,1.5" Background=" #eee" />
+                                </StackPanel>
+                                <StackPanel Margin="17,0" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                                    <TextBlock Text="Age :" TextAlignment="Center" FontSize="15"/>
+                                    <TextBox Height="25" Padding="2" Width="70" Margin="10,6.5,0,1.5" Background=" #eee" />
+                                </StackPanel>
+                            </Grid>
+                        </StackPanel>
+
+                        <StackPanel Margin="17,5">
+                            <TextBlock Text="Equation : " TextAlignment="Left" FontSize="15" />
+                            <TextBox  Height="85" Width="252" HorizontalAlignment="Left" Padding="2" Background=" #eee" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+                        </StackPanel>
+                        <StackPanel Margin="0,10">
+                            <Image Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\tab.png" Height="163"/>
+                        </StackPanel>
+
+
+                    </StackPanel>
                 </TabItem>
 
             </TabControl>
-            <!--Main Frame-->
+
 
         </StackPanel>
 
