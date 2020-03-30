@@ -1,1 +1,1 @@
-Ui WPF written in C#
+Ui written in Xaml
