@@ -36,7 +36,7 @@
     </Window.Resources>
     <Border Background="#ddd">
         <StackPanel>
-            <TabControl Height="570">
+            <TabControl x:Name="Maintab" Height="570">
 
 
 
@@ -80,16 +80,16 @@
                                 <ColumnDefinition  Width="*"/>
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0"  Margin="10">
-                                <Button Content="Save" Height="30" Background="#eee"/>
+                                <Button x:Name="SaveButton" Click="SaveButton_Click" Content="Save" Height="30" Background="#eee"/>
 
                             </StackPanel>
                             <StackPanel Grid.Column="1" Margin="10" >
 
-                                <Button Content="Load"  Height="30"  Background="#eee"/>
+                                <Button x:Name="LoadButton" Click="LoadButton_Click" Content="Load"  Height="30"  Background="#eee"/>
 
                             </StackPanel>
                             <StackPanel Grid.Column="4" Margin="10" >
-                                <Button   Height="30" Background="#eee">
+                                <Button x:Name="ResetButton" Click="ResetButton_Click"  Height="30" Background="#eee">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Text="Reset"  Margin="0,5,7,0" Height="20" Foreground="#000"/>
                                         <Image Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\Reset.png" Width="16" Margin="0,0,3,0"/>
@@ -110,7 +110,7 @@
 
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0" Margin="10,5">
-                                <Button Content="New"  Height="30"  Background="#eee"/>
+                                <Button x:Name="NewButton" Click="NewButton_Click" Content="New"  Height="30"  Background="#eee"/>
                             </StackPanel>
                         </Grid>
 
@@ -133,24 +133,24 @@
                                 <ColumnDefinition  Width="*"/>
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="0">
-                                <CheckBox Content="Css"/>
-                                <CheckBox Content="Html"/>
-                                <CheckBox Content="JavaScript"/>
+                                <CheckBox Unchecked="CheckBox_Unchecked" Checked="CheckBox_Checked" x:Name="FirstCheckBox"  Content="Css"/>
+                                <CheckBox Unchecked="CheckBox_Unchecked" Checked="CheckBox_Checked" x:Name="SecondCheckBox"  Content="Html"/>
+                                <CheckBox Unchecked="CheckBox_Unchecked" Checked="CheckBox_Checked" x:Name="ThirdCheckBox" Content="JavaScript"/>
                             </StackPanel>
                             <StackPanel Grid.Column="1">
-                                <CheckBox Content="Asp"/>
-                                <CheckBox Content="Php"/>
-                                <CheckBox Content="Python"/>
+                                <CheckBox Unchecked="CheckBox_Unchecked" Checked="CheckBox_Checked" x:Name="FourthCheckBox" Content="Asp"/>
+                                <CheckBox Unchecked="CheckBox_Unchecked" Checked="CheckBox_Checked" x:Name="FivethCheckBox" Content="Php"/>
+                                <CheckBox Unchecked="CheckBox_Unchecked" Checked="CheckBox_Checked" x:Name="SixthCheckBox" Content="Python"/>
                             </StackPanel>
                             <StackPanel Grid.Column="2">
-                                <ComboBox SelectedIndex="0">
+                                <ComboBox x:Name="DisturbuteScroll" SelectedIndex="0">
                                     <ComboBoxItem Content="Linux"/>
                                     <ComboBoxItem Content="Windows"/>
                                 </ComboBox>
                             </StackPanel>
                         </Grid>
                         <TextBlock Text="Other things"/>
-                        <TextBox VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Margin="5" Height="150">
+                        <TextBox x:Name="FirstPageBox" VerticalScrollBarVisibility="Auto" TextWrapping="Wrap" Margin="5" Height="150">
 
                         </TextBox>
                         <Grid>
@@ -164,7 +164,7 @@
 
                             </Grid.ColumnDefinitions>
                             <StackPanel Grid.Column="1">
-                                <Button Margin="0,15,0,0" Padding="8"  Background="#eee">
+                                <Button x:Name="NextpageButton" Click="NextpageButton_Click" Margin="0,15,0,0" Padding="8"  Background="#eee">
                                     <StackPanel Orientation="Horizontal">
                                         <TextBlock Text="Next Page"  Margin="0,7,8,0" Height="20" Foreground="#000 " FontWeight="Bold"/>
                                         <Image Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\Next.png" Width="30" Margin="0,0,3,0"/>
@@ -200,7 +200,7 @@
                                 <TextBlock Text="Name, Family, Age and Equations" TextAlignment="Center"/>
                             </StackPanel>
                         </Grid>
-                        <StackPanel Margin="0,10">
+                        <StackPanel Margin="0,10,0,0">
                             <Grid Margin="0,10">
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
@@ -230,8 +230,8 @@
                                 </Grid.ColumnDefinitions>
 
                                 <StackPanel Margin="20,0" Orientation="Horizontal" Grid.Row="0" Grid.Column="0">
-                                    <TextBlock Text="Name :" TextAlignment="Center" FontSize="15"/>
-                                    <TextBox Height="25" Padding="2" Width="190" Margin="10,6.5,0,1.5" Background=" #eee" />
+                                    <TextBlock Text="Name :" TextAlignment="Center" FontSize="14"/>
+                                    <TextBox x:Name="NameBox"  Height="25" Padding="2" Width="190" Margin="10,6.5,0,1.5" Background=" #eee" />
                                 </StackPanel>
 
                             </Grid>
@@ -248,22 +248,23 @@
 
                                 </Grid.ColumnDefinitions>
                                 <StackPanel Margin="17,0" Orientation="Horizontal" Grid.Row="1" Grid.Column="0">
-                                    <TextBlock Text="Family :" TextAlignment="Center" FontSize="15"/>
-                                    <TextBox Height="25" Padding="2" Width="190" Margin="10,6.5,0,1.5" Background=" #eee" />
+                                    <TextBlock Text="Family :" TextAlignment="Center" FontSize="14"/>
+                                    <TextBox x:Name="FamilyBox" Height="25" Padding="2" Width="190" Margin="10,6.5,0,1.5" Background=" #eee" />
                                 </StackPanel>
-                                <StackPanel Margin="17,0" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
-                                    <TextBlock Text="Age :" TextAlignment="Center" FontSize="15"/>
-                                    <TextBox Height="25" Padding="2" Width="70" Margin="10,6.5,0,1.5" Background=" #eee" />
+                                <StackPanel x:Name="AgePanel" Margin="17,0" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                                    <TextBlock Text="Age :" TextAlignment="Center" FontSize="14"/>
+                                    <TextBox TextChanged="AgeBox_TextChanged" x:Name="AgeBox" Height="25" Padding="2" Width="70" Margin="10,6.5,0,1.5" Background=" #eee" />
                                 </StackPanel>
                             </Grid>
+                            <TextBlock x:Name="AgeError" Visibility="Hidden" Text="Wrong Value !" TextAlignment="Right" FontSize="12" Foreground="Red" Margin="0,10,18,0"/>
                         </StackPanel>
 
-                        <StackPanel Margin="17,5">
+                        <StackPanel Margin="17,0">
                             <TextBlock Text="Equation : " TextAlignment="Left" FontSize="15" />
-                            <TextBox  Height="85" Width="252" HorizontalAlignment="Left" Padding="2" Background=" #eee" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+                            <TextBox x:Name="EquationBox" Height="85" Width="252" HorizontalAlignment="Left" Padding="2" Background=" #eee" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
                         </StackPanel>
                         <StackPanel Margin="0,10">
-                            <Image Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\tab.png" Height="163"/>
+                            <Image x:Name="ImageBox" Source="C:\Users\Mohammad\Documents\AP_PROJECT\Ap_Project\Ap_Project\Ap_Project\tab.png" Height="163" Margin="100,0"/>
                         </StackPanel>
 
 
